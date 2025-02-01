@@ -38,6 +38,9 @@
     --activeButtonHoveColor: white;
 }
 
+.consentReject{
+    display: none !important;
+}
 
 /* optional */
 .bannerHeadlineLogo img {
