@@ -236,7 +236,120 @@ window.addEventListener("load", function() {
 
 		try {
 			const jsonCookies = await fetchCookies();
-			let matchedCookies = [];
+			let matchedCookies = [
+
+
+				{
+  "id": "SSID",
+  "platform": "Google",
+  "category": "Marketing",
+  "data_key": "SSID",
+  "domain": "https://uniformbright.com/",
+  "description": "with specific functions",
+  "retention_period": "2 years",
+  "data_controller": "Google",
+  "privary_rights_portals": "https://policies.google.com/privacy",
+  "wildcard_match": 0
+},
+				{
+  "id": "APISID",
+  "platform": "Google",
+  "category": "Marketing",
+  "data_key": "APISID",
+  "domain": "https://uniformbright.com/",
+  "description": "with specific functions",
+  "retention_period": "1 year",
+  "data_controller": "Google",
+  "privary_rights_portals": "https://policies.google.com/privacy",
+  "wildcard_match": 0
+},
+				{
+  "id": "HSID",
+  "platform": "Google",
+  "category": "Marketing",
+  "data_key": "HSID",
+  "domain": "https://uniformbright.com/",
+  "description": "provide fraud prevention.",
+  "retention_period": "2 years",
+  "data_controller": "Google",
+  "privary_rights_portals": "https://policies.google.com/privacy",
+  "wildcard_match": 0
+},
+		{
+  "id": "NID",
+  "platform": "Google",
+  "category": "Marketing",
+  "data_key": "NID",
+  "domain": "https://uniformbright.com/",
+  "description": "Google Ads Optimization.",
+  "retention_period": "6 months",
+  "data_controller": "Google",
+  "privary_rights_portals": "https://policies.google.com/privacy",
+  "wildcard_match": 0
+},		
+				{
+  "id": "OTZ",
+  "platform": "Google",
+  "category": "Analytics",
+  "data_key": "OTZ",
+  "domain": "https://uniformbright.com/",
+  "description": "session tracking and personalized advertising by storing aggregated user data.",
+  "retention_period": "30 days",
+  "data_controller": "Google",
+  "privary_rights_portals": "https://policies.google.com/privacy",
+  "wildcard_match": 0
+},		
+	{
+  "id": "SAPISID",
+  "platform": "Google",
+  "category": "Marketing",
+  "data_key": "SAPISID",
+  "domain": "https://uniformbright.com/",
+  "description": "to save user preferences.",
+  "retention_period": "2 years",
+  "data_controller": "Google",
+  "privary_rights_portals": "https://policies.google.com/privacy",
+  "wildcard_match": 0
+},	
+				{
+  "id": "SEARCH_SAMESITE",
+  "platform": "Google",
+  "category": "Marketing",
+  "data_key": "SEARCH_SAMESITE",
+  "domain": "https://uniformbright.com/",
+  "description": "It helps improve security by ensuring that cookies are only sent in same-site contexts (i.e., requests from the same domain).",
+  "retention_period": "5days",
+  "data_controller": "Google",
+  "privary_rights_portals": "https://policies.google.com/privacy",
+  "wildcard_match": 0
+},
+		{
+  "id": "SIDCC",
+  "platform": "Google",
+  "category": "Marketing",
+  "data_key": "SIDCC",
+  "domain": "https://uniformbright.com/",
+  "description": "provide identification of trusted web traffic.",
+  "retention_period": "1 years",
+  "data_controller": "Google",
+  "privary_rights_portals": "https://policies.google.com/privacy",
+  "wildcard_match": 0
+},		
+
+				{
+  "id": "__Secure-1PAPISID",
+  "platform": "Google",
+  "category": "Marketing",
+  "data_key": "__Secure-1PAPISID",
+  "domain": "https://uniformbright.com/",
+  "description": "This cookie is often used to track user behavior across various Google services and maintain user sessions or preferences.",
+  "retention_period": "2 years",
+  "data_controller": "Google",
+  "privary_rights_portals": "https://policies.google.com/privacy",
+  "wildcard_match": 0
+},		
+		
+			];
 
 			jsonCookies.forEach((jsonCookie) => {
 				if (websiteCookiePaths.includes(jsonCookie.data_key)) {
